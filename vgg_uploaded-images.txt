@@ -1,0 +1,98 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+ 1 file:               Frog_01.jpg
+ 2 file: Australian_labradoodle_01.jpg
+ 3 file:         red_scarf_01.jpeg
+ 4 file: Australian_labradoodle_02.jpg
+Filename=Frog_01.jpg Label=frog
+Filename=Australian_labradoodle_01.jpg Label=australian labradoodle
+Filename=red_scarf_01.jpeg Label=red scarf
+Filename=Australian_labradoodle_02.jpg Label=australian labradoodle
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                    Frog_01.jpg  label:                       frog
+ 2 key:  Australian_labradoodle_01.jpg  label:     australian labradoodle
+ 3 key:              red_scarf_01.jpeg  label:                  red scarf
+ 4 key:  Australian_labradoodle_02.jpg  label:     australian labradoodle
+
+Results from test_classifier.py
+Image: uploaded_images//Frog_01.jpg using model: vgg was classified as a: bullfrog, rana catesbeiana match: 1
+
+Results from test_classifier.py
+Image: uploaded_images//Australian_labradoodle_01.jpg using model: vgg was classified as a: miniature poodle match: 0
+
+Results from test_classifier.py
+Image: uploaded_images//red_scarf_01.jpeg using model: vgg was classified as a: velvet match: 0
+
+Results from test_classifier.py
+Image: uploaded_images//Australian_labradoodle_02.jpg using model: vgg was classified as a: miniature poodle match: 0
+
+     MATCH:
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:     bullfrog, rana catesbeiana
+
+ NOT A MATCH:
+
+ Australian_labradoodle_01.jpg: 
+Real:     australian labradoodle   Classifier:               miniature poodle
+
+             red_scarf_01.jpeg: 
+Real:                  red scarf   Classifier:                         velvet
+
+ Australian_labradoodle_02.jpg: 
+Real:     australian labradoodle   Classifier:               miniature poodle
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+Pausing for 5 seconds
+
+     MATCH:
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:     bullfrog, rana catesbeiana  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+ Australian_labradoodle_01.jpg: 
+Real:     australian labradoodle   Classifier:               miniature poodle  
+PetLabelDog: 0  ClassLabelDog: 1
+
+             red_scarf_01.jpeg: 
+Real:                  red scarf   Classifier:                         velvet  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ Australian_labradoodle_02.jpg: 
+Real:     australian labradoodle   Classifier:               miniature poodle  
+PetLabelDog: 0  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  0  N NotDog Images:  4 
+Pct Corr dog:   0.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  0  N NotDog Images:  4 
+Pct Corr dog:   0.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture None ***
+N Images            :   4
+N Dog Images        :   0
+N Not-Dog Images    :   4
+ 
+pct_match           : 25.00
+pct_correct_dogs    : 0.00
+pct_correct_breed   : 0.00
+pct_correct_notdogs : 50.00
+
+INCORRECT Dog/NOT Dog Assignments:
+frog is-a-dog and classifier label is-NOT-a-dog.
+
+CORRECT Dog Breed Assignment! Well Done!
+
+** Total Elapsed Runtime: 0:0:11
