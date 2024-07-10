@@ -95,4 +95,4 @@ frog is-a-dog and classifier label is-NOT-a-dog.
 
 CORRECT Dog Breed Assignment! Well Done!
 
-** Total Elapsed Runtime: 0:0:6
+** Total Elapsed Runtime: 0:0:5
